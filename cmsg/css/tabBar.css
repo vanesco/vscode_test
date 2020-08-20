@@ -1,0 +1,47 @@
+.tab {
+	width: 650px;
+	height: 31px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+ul.tab li{
+	width: 155px;
+	height: 30px;
+	float: left;
+	margin: 0 3px 0 0;
+	font-size: 12px;
+}
+ul.tab li a{
+	display: block;
+	background: white;
+	color: gray;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid #e0e0e0;
+}
+ul.tab li a.selected{
+	background: #496b9e;
+	color: white;
+}
+ul.panel{
+	clear: both;
+}
+ul.panel li{
+	font-size: 12px;
+	padding: 30px 0 0 20px;
+}
+
+.tabBullet {
+	display: block;
+	font-size: 16px;
+	color:#3f7da8;
+}
+
+.tabP {
+	padding: 0 0 0 10px;
+	line-height: 150%;
+}
+
+.tabImg {
+	margin: 40px 0 40px 0;
+}

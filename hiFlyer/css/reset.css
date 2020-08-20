@@ -1,0 +1,21 @@
+@font-face{
+font-family:ng;src:url('/web_font/NanumGothic.eot');src:url('/web_font/NanumGothic.eot') format('embedded-opentype');src:url('/web_font/NanumGothic.eot') format('truetype')}
+
+@font-face{
+font-family:ng_b;src:url('/web_font/NanumGothicBold.eot');src:url('/web_font/NanumGothicBold.ttf') format('truetype')}
+
+html,body{height:100%;margin:0;padding:0}
+
+body{background:#fff;font-family:'ng';font:12px/1.5 'NanumGothic','돋움',Dotum,'굴림',Gulim,Arial,sans-serif}
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,tbody,tfoot,thead,th,td{margin:0;padding:0}
+input,textarea,select,button,td,th{font-family:'ng';font:12px/1.5 'NanumGothic','돋움',Dotum,'굴림',Gulim,Arial,sans-serif;vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+table{width:100%;border-collapse:collapse;table-layout:fixed;border-spacing:0}
+ol,ul,li{list-style:none}
+hr,legend,caption,.hidden{visibility:hidden;overflow:hidden;position:absolute;top:0;left:-5000px;width:.1%;height:.1%;line-height:.1%;font-size:.1%}
+caption{position:relative}
+img,fieldset{border:0 none}
+label,button{cursor:pointer}
+em,address{font-style:normal}
+a:link,a:visited{color:#767676;text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:none}

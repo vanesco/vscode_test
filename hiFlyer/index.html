@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>하이전단 웹뷰어</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common_mobile.css" media="only screen and (max-width: 620px)">
+    <link rel="stylesheet" href="css/common_pc.css" media="only screen and (min-width: 620px)">
+</head>
+<body>
+    <!-- 모바일 인트로 -->
+    <div id="intro">
+        <div class="intro_bg"></div>
+        <img src="image/intro_logo.png" alt="">
+    </div>
+
+    <!-- pc안내창 -->
+    <div id="pcver_notice">
+        <img src="http://placehold.it/400x500" alt="">
+        <span class="button b-close">닫기</span>        
+    </div>
+
+    <div id="gnb">
+        <ul class="menu-bar">
+            <li class="item call"><a href=""><img src="image/call-icon.png" alt="">전화하기</a></li>
+            <li class="item share dark"><a href=""><img src="image/share-icon.png" alt="">공유하기</a></li>
+            <li class="logo"><h3>DIGITAL FLYER</h3><h1>하이모빌전단</h1></li>
+            <li class="item map"><a href=""><img src="image/map-icon.png" alt="">지도보기</a></li>
+            <li class="item talk dark"><a href=""><img src="image/web-icon.png" alt="">홈페이지</a></li>
+        </ul>        
+    </div>
+    
+    <!-- pc토클버튼 -->
+    <div class="toggle">가리기</div>
+
+    <div class="bar-sub notice-sub">
+        <div class="sub_bg"></div>
+        <div class="sub-menu">
+            <ul>
+                <li><img src="image/notice-icon-1.png" alt=""><p>두손가락으로<br />확대/축소 하세요</p></li>
+                <li><img src="image/notice-icon-2.png" alt=""><p>좌우로 밀어<br />앞면/뒷면을 보세요</p></li>
+            </ul>            
+        </div>
+        <span class="sub-close button b-close">닫기</span>
+    </div>
+
+    <div class="bar-sub call-sub">
+        <div class="sub_bg"></div>
+        <div class="sub-menu">
+            <ul>
+                <li><img src="image/call-icon-sub-1.png" alt=""><p>전단지의 연락처로<br/>전화걸기</p></li>
+                <li><img src="image/call-icon-sub-2.png" alt=""><p>전단지의 얀락처<br/>저장하기</p></li>
+            </ul>            
+        </div>
+        <span class="sub-close button b-close">닫기</span>
+    </div>
+
+    <div class="bar-sub share-sub">
+        <div class="sub_bg"></div>
+        <div class="sub-menu">
+            <ul>
+                <li><img src="image/share-icon-kakao.png" alt=""></li>
+                <li><img src="image/share-icon-facebook.png" alt=""></li>
+                <li><img src="image/share-icon-twiter.png" alt=""></li>
+                <li><img src="image/share-icon-mms.png" alt=""></li>
+            </ul>            
+        </div>
+        <span class="sub-close button b-close">닫기</span>
+    </div>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image/slide-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/slide-2.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jQuery.bPopup.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (){
+            $(".menu-bar .map").click(function () {
+                location.href = "https://www.google.co.kr/maps/place/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%A4%91%EA%B5%AC+%EB%A7%88%EB%A5%B8%EB%82%B4%EB%A1%9C+65/@37.5644078,126.9930036,17z/data=!3m1!4b1!4m5!3m4!1s0x357ca2e225b08589:0xca583d8023193bf7!8m2!3d37.5644078!4d126.9951976?hl=ko";
+            });
+        });
+    </script>
+</body>
+</html>

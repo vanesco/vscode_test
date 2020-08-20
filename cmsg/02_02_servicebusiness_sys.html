@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="이효준" />
+<meta name="description" content="CMSG 기업 홈페이지" />
+<title>최고의 IT서비스 파트너 CMSG입니다.</title>
+<!--[if lt IE 9]> 
+<script src="js/html5shiv.js"></script> 
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/cmsgReset.css" />
+<link rel="stylesheet" type="text/css" href="css/cmsgCommon.css" />
+<link rel="stylesheet" type="text/css" href="css/cmsgHeader.css" />
+<link rel="stylesheet" type="text/css" href="css/cmsgSub.css" />
+<link rel="stylesheet" type="text/css" href="css/tabBar.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("ul.panel li:not("+$("ul.tab li a.selected").attr("href")+")").hide()
+	$("ul.tab li a").click(function(){
+		$("ul.tab li a").removeClass("selected");
+		$(this).addClass("selected");
+		$("ul.panel li").hide();
+		$($(this).attr("href")).show();
+		return false;
+	});
+});
+</script>
+</head>
+<body>
+<!-- 헤더시작 -->
+	<header>
+		<div id="head">
+			<h1 id="logo"><a href="index.html"><img src="images/cmsg_logo.png" alt="로고" /></a></h1>
+			<nav>
+				<ul id="gnb">
+					<li><a href="01_01_introduction_basic.html">Introduction</a></li>
+					<li><a href="02_01_servicebusiness_con.html">Service Business</a></li>
+					<li><a href="03_01_solutionbusiness_cloud.html">Solution Business</a></li>
+					<li><a href="04_01_incruit_mojib.html"><img src="images/gnb_cmsgin_icon.png" alt="씨엠에스지인 아이콘" /></a></li>
+				</ul>
+				<ul id="lnb">
+					<li><a href="site_map.html"><img src="images/lnb_sitemap_icon.png" alt="사이트맵 아이콘" /></a></li>
+					<li><a href="mailto:esshim@cmsg.kr"><img src="images/lnb_contactus_icon.png" alt="콘택트어스 아이콘" /></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<!-- 헤더 끝-->
+	<div id="visualImg_Wrap">
+		<div class="visualImg"></div>
+	</div>
+	<div id="content">
+<!-- 죄측메뉴 -->
+		<aside>
+			<h2>서비스 사업</h2>
+			<p>Service Business</p>
+			<ul id="aside_Menu">
+				<li><a href="02_01_servicebusiness_con.html">컨설팅 서비스</a></li>
+				<li><a href="02_02_servicebusiness_sys.html">시트템 통합 서비스</a></li>
+				<li><a href="02_03_servicebusiness_out.html">아웃소싱 서비스</a></li>
+			</ul>			
+		</aside>
+<!-- 죄측메뉴 끝 -->
+		<section>
+			<h3>시스템 통합 서비스</h3>
+			<p class="h2Txt">시스템 통합 서비스는 테리토리별 분야에 고객의 비즈니스 환경에 가장 적합한 IT 시스템 통합 서비스를 제공합니다.<br />
+							그 동안 cmsg는 고객 인프라의 다양한 연계 시스템 구축 경험과 자체 개발 솔루션을 가지고 성공적인 비즈니스<br />
+							수행 능력을 인정 받았습니다.<br />
+							<br /> 
+							앞으로도 최적의 시스템 통합 서비스 제공을 위해 빠르게 변하는 시장 환경 및 IT 기술에 대한 연구개발을 통해 고객에게<br />
+							진정한 비즈니스 및 기술 가치를 제공하겠습니다.
+			</p>
+			<ul class="tab">
+				<li><a href="#tab1" class="selected">S사 M2M Platform 구축</a></li>
+				<li><a href="#tab2">K사 전자도서관 구축</a></li>
+				<li><a href="#tab3">L사 ADP U-PAD 구축</a></li>
+			</ul>
+				<ul class="panel">
+					<li id="tab1">
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 개요</span><br />
+						 <p class="tabP">
+							 M2M(Machine-to-machine) 플랫폼은 사물과 사물, 사물과 사람 간에 정보가 수집되고 처리되는<br />
+						     지능형 정보 인프라 솔루션을 제공합니다. M2M 플랫폼에서 제공하는 표준 API를 통해서 M2M 단말 제조사,<br /> 
+							 어플리케이션 개발사 및 개인 개발자 등이 쉽게 M2M 서비스를 개발할 수 있도록 지원합니다.<br />
+							 <br />
+							 본 프로젝트의 특징으로는 다양한 디바이스와 네트워크에 연동 하기 쉽도록 표준 프로토콜을 제시하여<br /> 
+							 게이트웨이를 쉽게 연동할 수 있도록 확장성 있는 네트워크 인터페이스를 제공하고, M2M 플랫폼에서<br /> 
+							 제공하는 OpenAPI를 통해서 차량점검, 원격검침 등의 서비스를 어플리케이션을 통해 구축 가능하도록<br /> 
+							 다양한 서비스 연동을 제공하며, 또한 ETSI 102.921 Requirement implementation 표준을 지원합니다.
+						 </p>
+						 <br />
+						 <br />
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭블릿" /> 주요 기능</span><br />
+						 <p class="tabP">
+							 - 데이터 수집, 모니터링, 단말 인증<br />
+							 - 어플리케이션 인증, 단말 제어, 환경 설정<br />
+							 - 펌웨어 업데이트, 키 관리, 원격 제어, 하드웨어 리셋
+						 </p>
+						 <img class="tabImg" src="images/service-business_Ssa.jpg" alt="탭이미지" />
+					</li>
+					<li id="tab2">
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 개요</span><br />
+						 <p class="tabP">
+							 스마트 휴대기기의 대중화에 따라, 무거운 도서를 직접 휴대하지 않고, 때와 장소에 제약없이 쉽게<br /> 
+						     접근 가능한 eBook 컨텐츠의 수요가 급증하고 있습니다.<br />
+							 기존 일반 종이책 뿐만 아니라, 잡지 신문 등의 컨텐츠 역시 eBook 으로 출시하는 등 시장은 IT 발전에 따라<br /> 
+							 종이책 산업에서 eBook 산업 으로의 전환이 매우 활발히 진행되고 있습니다.<br /> 
+							 하지만 종이책과 큰 차이가 없는 eBook 컨텐츠의 가격으로 인해 소비자들의 eBook 컨텐츠 구매는 아직<br /> 
+							 종이책의 거래량을 따라잡지 못하고 있는 상황입니다.<br /> 
+						     이러한 시장 상황에 따라 eBook 컨텐츠를 단순히 판매하는 것이 아닌,<br /> 
+							 일정 금액을 지불하고 대여하는 서비스를 제공함으로써 사업자의 수익과 소비자의 접근성을 대폭 개선하는<br /> 
+							 ASP 형태의 전자도서관을 개발/제공합니다.
+						</p>
+						<br />
+						<br />
+						<span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭블릿" /> 주요 기능</span><br />
+						<p class="tabP">
+						   - eBook 컨텐츠 구매 및 관리<br />
+						   - 각종 대출정책 및 사이트 제어를 위한 Back-office 시스템<br />
+						   - 사용자들이 eBook을 조회하고 대출, 반납, 예약 등을 할 수 있는 Front-end 시스템<br />
+						   - 기타 고객사 맞춤 제공을 위한 커스터마이징 기능
+						</p>
+						<img class="tabImg" src="images/service-business_Ksa.jpg" alt="탭이미지" />
+					</li>
+					<li id="tab3">
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 개요</span><br />
+						 <p class="tabP">
+							 다양한 크기의 스마트 기기에 대한 소비자 요구에 따라 기존의 스마트폰의 크기를 넘어서는<br /> 
+							 PAD 형식의 대형 스마트 기기가 속속 출시되고 있습니다.<br /> 
+							 이에 따라 기존 안드로이드 어플리케이션 마켓도 스마트폰 기준이 아닌 패드형태의 대형화된 기기에 맞는<br /> 
+							 마켓의 필요성이 대두 되었습니다.<br />
+							 본 ADP U-PAD 연동시스템 구축을 통하여 기존 L사 안드로이드 마켓 서비스의 지원 영역을 확장하고<br /> 
+							 개발영역의 다양성을 도모하여 신규 컨텐츠 수급 및 시장 선점을 통하여 안드로이드 서비스 시장에서의<br /> 
+							 경쟁 우위를 선점하고자 프로젝트가 수행되었습니다.
+						 </p>
+						 <br />
+						 <br />
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭블릿" /> 범위</span><br />
+						 <p class="tabP">
+							 PAD용 데이터 구성을 위한 CMS 연동 추가개발, L사 레거시 시스템 연동 개발, 단말 서비스<br />
+							 제공을 위한 U-PAD 연동 개발
+						 </p>
+						 <br />
+						 <br />
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭블릿" /> 구성</span><br />
+						 <p class="tabP">
+							 ADP 서비스 시스템은 무선 단말 및 유선 웹 서비스 제공을 위한 Service function,<br /> 
+							 메타 정보를 관리하는 Repository, 외부 시스템과의 연동을 위한 External service function
+						 </p>
+						 <img class="tabImg" src="images/service-business_Lsa.jpg" alt="탭이미지" />
+					</li>
+				</ul>
+		</section>
+	</div>
+	<footer>
+		<img src="images/footerlogo.png" alt="푸터 로고" />
+		<address>서울시 강남구 대치동 890-48 우진빌딩 9층 T 070.7477.1461 F 02.562.7752 Email<a href="mailto:esshim@cmsg.kr"> esshim@cmsg.kr</a> ㅣ COPYRIGHT 2012 CMSG. All RIGHTS RESERVED.</address>
+	</footer>
+</body>
+</html>

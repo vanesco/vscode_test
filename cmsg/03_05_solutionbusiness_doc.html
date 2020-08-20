@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="이효준" />
+<meta name="description" content="CMSG 기업 홈페이지" />
+<title>최고의 IT서비스 파트너 CMSG입니다.</title>
+<!--[if lt IE 9]> 
+<script src="js/html5shiv.js"></script> 
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/cmsgReset.css" />
+<link rel="stylesheet" type="text/css" href="css/cmsgCommon.css" />
+<link rel="stylesheet" type="text/css" href="css/cmsgHeader.css" />
+<link rel="stylesheet" type="text/css" href="css/cmsgSub.css" />
+<link rel="stylesheet" type="text/css" href="css/tabBar.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("ul.panel li:not("+$("ul.tab li a.selected").attr("href")+")").hide()
+	$("ul.tab li a").click(function(){
+		$("ul.tab li a").removeClass("selected");
+		$(this).addClass("selected");
+		$("ul.panel li").hide();
+		$($(this).attr("href")).show();
+		return false;
+	});
+});
+</script>
+</head>
+<body>
+<!-- 헤더시작 -->
+	<header>
+		<div id="head">
+			<h1 id="logo"><a href="index.html"><img src="images/cmsg_logo.png" alt="로고" /></a></h1>
+			<nav>
+				<ul id="gnb">
+					<li><a href="01_01_introduction_basic.html">Introduction</a></li>
+					<li><a href="02_01_servicebusiness_con.html">Service Business</a></li>
+					<li><a href="03_01_solutionbusiness_cloud.html">Solution Business</a></li>
+					<li><a href="04_01_incruit_mojib.html"><img src="images/gnb_cmsgin_icon.png" alt="씨엠에스지인 아이콘" /></a></li>
+				</ul>
+				<ul id="lnb">
+					<li><a href="site_map.html"><img src="images/lnb_sitemap_icon.png" alt="사이트맵 아이콘" /></a></li>
+					<li><a href="mailto:esshim@cmsg.kr"><img src="images/lnb_contactus_icon.png" alt="콘택트어스 아이콘" /></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<!-- 헤더 끝-->
+	<div id="visualImg_Wrap">
+		<div class="visualImg"></div>
+	</div>
+	<div id="content">
+<!-- 좌측메뉴 -->
+		<aside>
+			<h2>솔루션 사업</h2>
+			<p>Solution Business</p>
+			<ul id="aside_Menu">
+				<li><a href="03_01_solutionbusiness_cloud.html">클라우드 솔루션</a></li>
+				<li><a href="03_02_solutionbusiness_big.html">빅데이터 솔루션</a></li>
+				<li><a href="03_03_solutionbusiness_sec.html">시큐리티 솔루션</a></li>
+				<li><a href="03_04_solutionbusiness_moni.html">모니터링 솔루션</a></li>
+				<li><a href="03_05_solutionbusiness_doc.html">다큐먼트 솔루션</a></li>
+			</ul>			
+		</aside>
+<!-- 좌측메뉴 끝 -->
+		<section>
+			<h3>다큐먼트 솔루션</h3>
+			<p class="h2Txt">다큐먼트 솔루션(ePapyrus)<br />
+								PDF 연관 솔루션으로 다양한 포맷을 PDF문서로 변환이 가능한 PDF Gateway, PDF 문서 열람을 위한 전용 뷰어<br /> 
+								SecureReader, PDF변환용 클라이언트 소프트웨어인 PDF Pro5, 그리고 다양한 포맷을 PDF로 변환할 수 있는<br /> 
+								PDF Express 제품군으로 요구되는 다양한 형태의 문서를 PDF 포맷으로 통일하여 문서를 효과적으로 관리할 수 있고<br /> 
+								열림/공유/유통 과정에서도 생산성과 안정성을 확보할 수 있는 솔루션입니다.
+			</p>
+			<ul class="tab">
+				<li><a href="#tab1" class="selected">PDF Gateway</a></li>
+				<li><a href="#tab2">PDF Pro5</a></li>
+				<li><a href="#tab3">PDF Express</a></li>
+				<li><a href="#tab4">PDF SecureReader</a></li>
+			</ul>
+				<ul class="panel">
+					<li id="tab1">
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 주요기능</span><br />
+						 <p class="tabP">
+							 - 여러 종류의 포맷을 PDF 파일로 변환: MS오피스/ 아래한글/ 100여종 이상의 이미지파일, 웹 문서, AutoCAD등<br /> 
+							 - 여러 종류의 문서를 PDF로 변환<br />
+							 - 파워 풀 한 멀티스레드: 최대 256개의 문서를 동시에 변환<br />
+							 - PDF 문서 암호화: 128비트 암호화 알고리즘으로 보안 옵션 설정<br />
+							 - 워터마크 기능: PDF 문서에 텍스트와 이미지 형태의 워터마크 삽입<br />
+							 - PDF문서 편집 기능: 텍스트 및 페이지 추출, PDF문서 병합, 책갈피 삽입 및 추출, 품질 설정 기능
+						 </p>
+						 <br /> 
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 특장점</span><br />
+						 <p class="tabP">
+							 - 강력한 멀티스레드 지원: 싱글스레드 방식에 비해 속도가 월등히 빠르며 에러 파일 발생 시에도 안정적<br />
+							 - 최적의 변환 방식 채택: 문서 종류에 따라 Postscipt 방식과 OLE Automation 방식 중 최적의 방식을 선택하여<br /> 
+							 - PDF 변환 가능<br />
+							 - 기간계 시스템과 연동: 다양한 시스템 연동 수단을 지원하여 기간계 시스템과 쉽게 연동<br />
+							 - 안정적인 PDF 변환: 로드 밸런싱(분산 처리) 구현으로 안정적인 PDF 변환 가능
+						 </p>
+						 <br /> 
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 활용 분야</span><br />
+						 <p class="tabP">
+							 - EDMS나 ECM으로 문서 업로드 시 PDF로 변환 후 보존<br />
+							 - 전자결재 시스템과 연동하여 기안문과 첨부파일을 하나의 PDF 파일로 보존<br />
+							 - 게시판에 업로드하는 파일을 PDF로 자동 변환<br />
+							 - ERP 시스템 내 배포/보존용 파일을 PDF로 변환<br />
+							 - PDM 내 편리하고 안전한 도면 배포/관리/보존<br />
+							 - 전자도서관 서비스<br />
+							 - 공인전자문서센터 보존<br />
+							 - 대외문서 배포시 워터마크 삽입
+						 </p>
+						 <img class="tabImg" src="images/solution-business_PDF-Gateway.jpg" alt="탭이미지" />
+					</li>
+					<li id="tab2">
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 개요</span><br />
+						 <p class="tabP">
+							 모든 종류의 문서를 PDF로 변환하는 기능을 비롯하여 PDF 문서 열람, 내용 편집, 주석 등<br /> 
+							 다양한 PDF 관련 작업을 쉽고 빠르게 할 수 있는 PDF 소프트웨어
+						 </p>
+						 <br /> 
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 주요 기능</span><br />
+						 <p class="tabP">
+							 간편하고 빠른 문서 변환, 안전한 문서 유통, 편리한 문서 편집 기능, 쉽고 다양한 기능
+						 </p>
+						 <br />
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 특장점</span><br />
+						 <p class="tabp">
+							 -  보안 설정, 업무 시간을 단축시키는 멀티플레이어, 문서 검토에 용이한 문서 전용 편집기<br />
+							 - 사용 목적에 따른 퀄리티 구현, 폰트 걱정을 한꺼번에 해결
+						 </p>
+						 <img class="tabImg" src="images/solution-business_PDF-Pro5.jpg" alt="탭이미지" />
+					</li>
+					<li id="tab3">
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 개요</span><br />
+						 <p class="tabP">
+							 PDF Express는 간단한 설정만으로 기존의 기업 내 전산 인프라(ERP, 그룹웨어, 홈페이지 등)와<br /> 
+							 손쉽게 연동할 수 있는 PDF 자동 변환 제품
+						 </p>
+						 <br /> 
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 시스템 구성도</span>
+						 <img class="tabImg" src="images/solution-business_PDF-Express.jpg" alt="탭이미지" />
+					</li>
+					<li id="tab4">
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 개요</span><br />
+						 <p class="tabP">
+							 - 웹으로 게시하는 문서의 복사, 수정, 저장, 인쇄 등을 통제하여, 중요한 문서를 보호하고<br /> 
+							 - 안전하게 문서를 배포, 유통<br />
+							 - 온라인 뷰어로 단일 구성 및 스트리밍 서버와 연계 구성 가능
+					     </p>
+					     <br /> 
+						 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 시스템 구성도</span>
+						 <img class="tabImg" src="images/solution-business_PDF-SecureReader.jpg" alt="탭이미지" />
+					</li>
+				</ul>
+		</section>
+	</div>
+	<footer>
+		<img src="images/footerlogo.png" alt="푸터 로고" />
+		<address>서울시 강남구 대치동 890-48 우진빌딩 9층 T 070.7477.1461 F 02.562.7752 Email<a href="mailto:esshim@cmsg.kr"> esshim@cmsg.kr</a> ㅣ COPYRIGHT 2012 CMSG. All RIGHTS RESERVED.</address>
+	</footer>
+</body>
+</html>

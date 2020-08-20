@@ -1,0 +1,49 @@
+
+/*해더 레이아웃 */
+header{
+	height: 60px;
+	background-image: url('../images/headerBG.gif');
+	background-repeat: repeat-x;
+}
+
+#head{
+	position: relative;
+	width: 980px;
+	margin: 0 auto;
+}
+
+#logo{
+	position: absolute;
+	left: 0;
+}
+
+#gnb{
+	position: absolute;
+	top:25px;
+	right: 150px;
+}
+
+#gnb li{
+	float: left;
+	padding-right: 20px;
+}
+
+#gnb li a{
+	color: white;
+	font-size: 16px;
+}
+
+#gnb li a:hover{
+	color: yellow;
+}
+
+#lnb{
+	position: absolute;
+	top: 23px;
+	right: 0;
+}
+
+#lnb li{
+	float: left;
+	padding-left: 10px;
+}

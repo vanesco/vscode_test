@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;Chromeframe=1">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="robots" content="ALL">
+
+    <meta name="author" content="">
+    <meta name="generator" content="">
+
+    <meta http-equiv="refresh" content="">
+
+    <meta property="og:type" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <link rel="shortcut icon" type="image/png" href="" />
+
+    <title>name biz Design</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src=""></script>
+</head>
+
+<style>
+    .title {
+        position: relative;
+        width: 1134px;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+
+    .title button {
+        position: absolute;
+        top: 43px;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #000;
+        text-indent: -9999px;
+        background-image: url('img/close_icon.png');
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin: 0 0 30px 0;
+        padding: 0 0 12px 0;
+        border-bottom: 1px solid #d2d2d2;
+    }
+
+    dt {
+        margin: 20px 0 10px 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    dd {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .contents {
+        width: 100%;
+        padding: 70px 0;
+        text-align: center;
+        background-color: #bababa;
+    }
+</style>
+
+<body>
+    <div class="wrap">
+        <div class="title">
+            <h1>소소한 진심</h1>
+            <dl>
+                <dt>소개</dt>
+                <dd>- 모바일 온라인 쇼핑몰</dd>
+
+                <dt>작업</dt>
+                <dd>- 모바일웹 퍼블리싱</dd>
+                <dd>- UI 개발</dd>
+            </dl>
+            <button>닫기</button>
+        </div>
+
+        <div class="contents">
+            <img src="img/soso_m.png" alt="">
+        </div>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        function mobileCheck() {
+            if (navigator.userAgent.indexOf("Android") > 0 ||
+                navigator.userAgent.indexOf("iPhone") > 0 ||
+                navigator.userAgent.indexOf("iPad") > 0 ||
+                navigator.userAgent.indexOf("iPod") > 0 ||
+                navigator.userAgent.indexOf("BlackBerry") > 0) {
+                // alert("mobile");
+                $('.title').css({
+                    width: '90%',
+                    margin: '0 auto',
+                });
+                $('.contents img').css({
+                    width: '100%',
+                    padding: '0 20px'
+                    
+                });
+            }
+            else {
+                // alert('그외')
+            }
+        }
+
+        mobileCheck();
+
+        $('button').click(function () {
+            window.close();
+        });
+    });
+</script>
+
+</html>

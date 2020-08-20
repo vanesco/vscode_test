@@ -1,0 +1,121 @@
+html{
+	background-color: #e7e7e7;
+}
+
+header{
+	height: 60px;
+	background-image: url('../images/headerBG.gif');
+	background-repeat: repeat-x;
+}
+
+#head{
+	position: relative;
+	width: 980px;
+	margin: 0 auto;
+}
+
+#logo{
+	position: absolute;
+	left: 0;
+}
+
+#gnb{
+	position: absolute;
+	top:25px;
+	right: 150px;
+}
+
+#gnb li{
+	float: left;
+	padding-right: 20px;
+}
+
+#gnb li a{
+	color: white;
+	font-size: 16px;
+}
+
+#gnb li a:hover{
+	color: yellow;
+}
+
+#lnb{
+	position: absolute;
+	top: 23px;
+	right: 0;
+}
+
+#lnb li{
+	float: left;
+	padding-left: 10px;
+}
+
+/*컨텐츠 레이아웃 */
+/*#contentWrap{
+	clear: both;
+}*/
+
+#content{
+	width: 980px;
+	margin: 0 auto;
+	padding-top: 100px;
+
+}
+
+section{
+	float: left;
+	padding-top: 50px;
+}
+
+.mainTxt {
+	color: gray;
+	font-size: 12px;
+	line-height: 140%;
+	padding-top: 20px;
+}
+
+.mainIcon{
+	padding-top: 30px;
+}
+
+.mainIcon li{
+	float: left;
+	padding-right: 20px;
+}
+
+.mainIcon dl{
+	text-align: center;
+	font-size: 13px;
+}
+
+.mainIcon dl dt{
+	padding: 0 0 10px 0;
+}
+
+aside{
+	float: right;
+}
+
+/*푸터 레이아웃 */
+footer{
+	clear: both;
+}
+
+address{
+	width: 980px;
+	margin: 0 auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size: 12px;
+	color: gray;
+	text-align: center;
+	font-style: normal;
+}
+
+address a{
+	color: gray;
+}
+
+address a:hover{
+	text-decoration: underline;
+}

@@ -1,0 +1,16 @@
+/* line 3, src/assets/style/layout.scss */
+header {
+    padding: 30px;
+    background: #ddd; }
+
+/* line 4, src/assets/style/layout.scss */
+header h1 {
+    font-size: 36px; }
+
+/* line 13, src/assets/style/layout.scss */
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background: #ddd; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibGF5b3V0LmNzcyIsInNvdXJjZXMiOlsibGF5b3V0LnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiQGNoYXJzZXQgJ3V0Zi04JztcclxuXHJcbmhlYWRlciB7cGFkZGluZzogMzBweDsgYmFja2dyb3VuZDogI2RkZDt9XHJcbmhlYWRlciBoMSB7Zm9udC1zaXplOiAzNnB4O31cclxuXHJcblxyXG5cclxuXHJcblxyXG5cclxuXHJcblxyXG5mb290ZXIge3BhZGRpbmc6IDIwcHggMDsgdGV4dC1hbGlnbjogY2VudGVyOyBiYWNrZ3JvdW5kOiAjZGRkO30iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUVBLEFBQUEsTUFBTSxDQUFDO0lBQUMsT0FBTyxFQUFFLElBQUk7SUFBRSxVQUFVLEVBQUUsSUFBSSxHQUFHOzs7QUFDMUMsQUFBQSxNQUFNLENBQUMsRUFBRSxDQUFDO0lBQUMsU0FBUyxFQUFFLElBQUksR0FBRzs7O0FBUzdCLEFBQUEsTUFBTSxDQUFDO0lBQUMsT0FBTyxFQUFFLE1BQU07SUFBRSxVQUFVLEVBQUUsTUFBTTtJQUFFLFVBQVUsRUFBRSxJQUFJLEdBQUcifQ== */

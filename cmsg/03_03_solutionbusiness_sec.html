@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="이효준" />
+<meta name="description" content="CMSG 기업 홈페이지" />
+<title>최고의 IT서비스 파트너 CMSG입니다.</title>
+<!--[if lt IE 9]> 
+<script src="js/html5shiv.js"></script> 
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/cmsgReset.css" />
+<link rel="stylesheet" type="text/css" href="css/cmsgCommon.css" />
+<link rel="stylesheet" type="text/css" href="css/cmsgHeader.css" />
+<link rel="stylesheet" type="text/css" href="css/cmsgSub.css" />
+<link rel="stylesheet" type="text/css" href="css/tabBar.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("ul.panel li:not("+$("ul.tab li a.selected").attr("href")+")").hide()
+	$("ul.tab li a").click(function(){
+		$("ul.tab li a").removeClass("selected");
+		$(this).addClass("selected");
+		$("ul.panel li").hide();
+		$($(this).attr("href")).show();
+		return false;
+	});
+});
+</script>
+</head>
+<body>
+<!-- 헤더시작 -->
+	<header>
+		<div id="head">
+			<h1 id="logo"><a href="index.html"><img src="images/cmsg_logo.png" alt="로고" /></a></h1>
+			<nav>
+				<ul id="gnb">
+					<li><a href="01_01_introduction_basic.html">Introduction</a></li>
+					<li><a href="02_01_servicebusiness_con.html">Service Business</a></li>
+					<li><a href="03_01_solutionbusiness_cloud.html">Solution Business</a></li>
+					<li><a href="04_01_incruit_mojib.html"><img src="images/gnb_cmsgin_icon.png" alt="씨엠에스지인 아이콘" /></a></li>
+				</ul>
+				<ul id="lnb">
+					<li><a href="site_map.html"><img src="images/lnb_sitemap_icon.png" alt="사이트맵 아이콘" /></a></li>
+					<li><a href="mailto:esshim@cmsg.kr"><img src="images/lnb_contactus_icon.png" alt="콘택트어스 아이콘" /></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<!-- 헤더 끝-->
+	<div id="visualImg_Wrap">
+		<div class="visualImg"></div>
+	</div>
+	<div id="content">
+<!-- 좌측메뉴 -->
+		<aside>
+			<h2>솔루션 사업</h2>
+			<p>Solution Business</p>
+			<ul id="aside_Menu">
+				<li><a href="03_01_solutionbusiness_cloud.html">클라우드 솔루션</a></li>
+				<li><a href="03_02_solutionbusiness_big.html">빅데이터 솔루션</a></li>
+				<li><a href="03_03_solutionbusiness_sec.html">시큐리티 솔루션</a></li>
+				<li><a href="03_04_solutionbusiness_moni.html">모니터링 솔루션</a></li>
+				<li><a href="03_05_solutionbusiness_doc.html">다큐먼트 솔루션</a></li>
+			</ul>			
+		</aside>
+<!-- 좌측메뉴 끝 -->
+		<section>
+			<h3>시큐리티 솔루션</h3>
+			<p class="h2Txt">보메트릭은 엔터프라이즈 암호화 및 키 관리 분야의 전문 솔루션으로, VDS(Vormetric Data Security) 솔루션은<br /> 
+								탑재 장소에 관계없이 어떤 유형의 파일, 데이터베이스, 어플리케이션도 성능 저하나 키 관리 복잡성 없이 암호화할 수 있도록<br /> 
+								해주는 확장성 있고 관리가 쉬운 단일 솔루션을 제공합니다.<br /> 
+								IBM은 DB2 및 Informix를 위한 유일한 데이터베이스 암호화 솔루션으로 보메트릭 기술을 채택하였으며,<br /> 
+								Symantec 또한 Veritas NetBackup Media Server 암호화 옵션 제공을 위해 보메트릭 기술을 사용하고 있습니다.<br /><br /> 
+								
+								보메트릭의 암호화 대상은 IIS, Apache, WebLogic 과 같은 미들웨어에서 부터 각종 DBMS와 다양한 어플리케이션, File server,<br /> 
+								FTP server 등의 데이터와 백업 및 설정정보까지 저장되는 모든 데이터에 암호화를 적용 할 수 있습니다.
+			</p>
+			<ul class="tab">
+				<li><a href="#tab1" class="selected">Data Integrator</a></li>
+			</ul>
+				<ul class="panel">
+						<li id="tab1">
+							 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 도입의 필요성</span><br />
+							 <p class="tabP">
+								 - DB 암호화에 따른 개인정보 보호법<br />
+								 - DB 암호화 시 복잡한 구현 방식 및 구축후 성능 저하 이슈<br />
+								 - DB 암호화 구축 시 연동되는 어플리케이션 소스 수정 문제<br />
+								 - DB 자체 암호화 시 로그파일 등의 개인정보 유출 우려 이슈
+						     </p>
+						     <br /> 
+							 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 특장점</span><br />
+							 <p class="tabP">
+								 - 손쉬운 설치 및 간단한 로직구현으로 인한 아키텍처 유연성<br />
+								 - 어플리케이션의 소스 수정이 필요없는 암호화 환경 구축<br />
+								 - 성능 저하없는 DB암호화 구축<br />
+								 - 높은 호환성과 보안성
+							 </p> 
+							 <img class="tabImg" src="images/solution-business_security.jpg" alt="탭이미지" />
+						</li>
+				</ul>
+		</section>
+	</div>
+	<footer>
+		<img src="images/footerlogo.png" alt="푸터 로고" />
+		<address>서울시 강남구 대치동 890-48 우진빌딩 9층 T 070.7477.1461 F 02.562.7752 Email<a href="mailto:esshim@cmsg.kr"> esshim@cmsg.kr</a> ㅣ COPYRIGHT 2012 CMSG. All RIGHTS RESERVED.</address>
+	</footer>
+</body>
+</html>

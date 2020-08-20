@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="이효준" />
+<meta name="description" content="CMSG 기업 홈페이지" />
+<title>최고의 IT서비스 파트너 CMSG입니다.</title>
+<!--[if lt IE 9]> 
+<script src="js/html5shiv.js"></script> 
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/cmsgReset.css" />
+<link rel="stylesheet" type="text/css" href="css/cmsgCommon.css" />
+<link rel="stylesheet" type="text/css" href="css/cmsgHeader.css" />
+<link rel="stylesheet" type="text/css" href="css/cmsgSub.css" />
+<link rel="stylesheet" type="text/css" href="css/tabBar.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("ul.panel li:not("+$("ul.tab li a.selected").attr("href")+")").hide()
+	$("ul.tab li a").click(function(){
+		$("ul.tab li a").removeClass("selected");
+		$(this).addClass("selected");
+		$("ul.panel li").hide();
+		$($(this).attr("href")).show();
+		return false;
+	});
+});
+</script>
+</head>
+<body>
+<!-- 헤더시작 -->
+	<header>
+		<div id="head">
+			<h1 id="logo"><a href="index.html"><img src="images/cmsg_logo.png" alt="로고" /></a></h1>
+			<nav>
+				<ul id="gnb">
+					<li><a href="01_01_introduction_basic.html">Introduction</a></li>
+					<li><a href="02_01_servicebusiness_con.html">Service Business</a></li>
+					<li><a href="03_01_solutionbusiness_cloud.html">Solution Business</a></li>
+					<li><a href="04_01_incruit_mojib.html"><img src="images/gnb_cmsgin_icon.png" alt="씨엠에스지인 아이콘" /></a></li>
+				</ul>
+				<ul id="lnb">
+					<li><a href="site_map.html"><img src="images/lnb_sitemap_icon.png" alt="사이트맵 아이콘" /></a></li>
+					<li><a href="mailto:esshim@cmsg.kr"><img src="images/lnb_contactus_icon.png" alt="콘택트어스 아이콘" /></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<!-- 헤더 끝-->
+	<div id="visualImg_Wrap">
+		<div class="visualImg"></div>
+	</div>
+	<div id="content">
+<!-- 좌측메뉴 -->
+		<aside>
+			<h2>솔루션 사업</h2>
+			<p>Solution Business</p>
+			<ul id="aside_Menu">
+				<li><a href="03_01_solutionbusiness_cloud.html">클라우드 솔루션</a></li>
+				<li><a href="03_02_solutionbusiness_big.html">빅데이터 솔루션</a></li>
+				<li><a href="03_03_solutionbusiness_sec.html">시큐리티 솔루션</a></li>
+				<li><a href="03_04_solutionbusiness_moni.html">모니터링 솔루션</a></li>
+				<li><a href="03_05_solutionbusiness_doc.html">다큐먼트 솔루션</a></li>
+			</ul>			
+		</aside>
+<!-- 좌측메뉴 끝 -->
+		<section>
+			<h3>클라우드 솔루션</h3>
+			<p class="h2Txt">기업들이 클라우드 컴퓨팅을 도입할 때 가장 어려움을 많이 겪는 부분 중 하나가 바로 기존 사내 시스템과 클라우드 시스템 간<br />
+							 데이터 통합입니다. 퍼베이시브는 퍼블릭•프라이빗 클라우드 환경에서 기존 시스템과 데이터 통합을 전문적으로 하는 클라우드<br />
+							 데이터 통합의 선두 주자로써 클라우드 데이터 통합까지 다루는 클라우드 서비스 브로커리지(CSB) 전문 솔루션을 제공하고 있습니다.<br />
+						     <br /> 
+							 최근 Data Integrator V10을 클라우드 버전과 구축형(on-premise) 버전으로 출시하여, 클라우드 버전은 클라우드 환경에<br />
+							 서버를 설치해 데이터 통합 서비스를 ‘온디멘드’로 받을 수 있고, 구축형 버전은 기존 데이터 통합서버에 설치해 운영됩니다.<br /> 
+							 <br />
+							 cmsg는 향후 클라우드를 도입하려는 고객에게 장기적인 클라우드 로드맵 수립, 클라우드 커스터마이징, 클라우드 데이터 통합<br />
+							 서비스까지 일관된 솔루션을 공급할 수 있게 되었습니다.
+		    </p>
+		    <ul class="tab">
+				<li><a href="#tab1" class="selected">Data Integrator</a></li>
+			</ul>
+					<ul class="panel">
+						<li id="tab1">
+							 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 개요</span><br />
+							 <p class="tabP">
+								 단 한번의 디자인으로 사내, 클라우드 또는 양쪽 모두 어느 곳에서든 디플로이 가능<br />
+								 Data Integrator는 아래의 각 부문 담당자들이 데이터 통합을 하는데 있어서 빠르고 강력하며,<br /> 
+								 비용 대비 효과적이고 사용이 매우 편리합니다.<br />
+								 <br />
+								 - Business Analysts and Developers<br />
+								 - Operations and IT Management<br />
+								 - Developers and Administrators
+						     </p> 
+							 <img class="tabImg" src="images/solution-business_cloud01.jpg" alt="탭이미지" />
+							 <span class="tabBullet"><img src="images/tabBullet.jpg" alt="탭불릿" /> 주요 기능</span><br />
+							 <p class="tabP">
+							 아래와 같은 Data Integrator의 주요 기능을 통해 보안, 확장성, 민첩성을 제공<br />
+							 <br />
+							 - Visual Workflow Design Interface<br />
+							 - Drag-and Drop Link-Style Mapper<br />
+							 - RIA Browser-Based User Interface<br />
+							 - Deploy On-Premise or On the Cloud<br />
+							 - Lifecycle Management<br />
+							 - SOA Platform<br />
+							 - Cloud-to-Cloud Computing<br />
+							 - Interchangeable and Reusable Metadata
+							 </p> 
+							 <img class="tabImg" src="images/solution-business_cloud02.jpg" alt="탭이미지" />
+						</li>
+					</ul>
+		</section>
+	</div>
+	<footer>
+		<img src="images/footerlogo.png" alt="푸터 로고" />
+		<address>서울시 강남구 대치동 890-48 우진빌딩 9층 T 070.7477.1461 F 02.562.7752 Email<a href="mailto:esshim@cmsg.kr"> esshim@cmsg.kr</a> ㅣ COPYRIGHT 2012 CMSG. All RIGHTS RESERVED.</address>
+	</footer>
+</body>
+</html>

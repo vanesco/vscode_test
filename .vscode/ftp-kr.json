@@ -1,0 +1,16 @@
+{
+    "host": "112.175.184.99",
+    "username": "vanesco",
+    "password": "qlalfdldi80!",
+    "remotePath": "/html/",
+    "protocol": "ftp",
+    "port": 21,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}

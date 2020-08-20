@@ -1,0 +1,22 @@
+@font-face{
+	font-family: 'NanumGothic';
+	src: local('NanumGothic'),
+		   url('NanumGothic.eot'),
+		   url('NanumGothic.ttf'),
+		   url('NanumGothic.woff');
+}
+
+html {
+	font-family: 'NanumGothic';
+}
+
+/*글 강조 */
+.bold{
+	color: #2e4f88;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.tdGray{
+	color: gray;
+}
